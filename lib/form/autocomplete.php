@@ -101,6 +101,10 @@ class MoodleQuickForm_autocomplete extends MoodleQuickForm_select {
             $this->valuehtmlcallback = $attributes['valuehtmlcallback'];
             unset($attributes['valuehtmlcallback']);
         }
+        if (isset($attributes['closesuggestionsonselect'])) {
+            $this->closesuggestionsonselect = $attributes['closesuggestionsonselect'];
+            unset($attributes['closesuggestionsonselect']);
+        }
         parent::__construct($elementName, $elementLabel, $options, $attributes);
 
         $this->_type = 'autocomplete';
@@ -239,6 +243,7 @@ class MoodleQuickForm_autocomplete extends MoodleQuickForm_select {
         $context['casesensitive'] = !empty($this->casesensitive);
         $context['showsuggestions'] = !empty($this->showsuggestions);
         $context['noselectionstring'] = $this->noselectionstring;
+        $context['closesuggestionsonselect'] = isset($this->closesuggestionsonselect) ? $this->closesuggestionsonselect : false;
         if ($this->valuehtmlcallback) {
             foreach ($context['options'] as &$option) {
                 $value = $option['value'];

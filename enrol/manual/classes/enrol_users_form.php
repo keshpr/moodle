@@ -92,7 +92,8 @@ class enrol_manual_enrol_users_form extends moodleform {
             'multiple' => true,
             'courseid' => $course->id,
             'enrolid' => $instance->id,
-            'userfields' => implode(',', get_extra_user_fields($context))
+            'userfields' => implode(',', get_extra_user_fields($context)),
+            'closesuggestionsonselect' => true
         );
         $mform->addElement('autocomplete', 'userlist', get_string('selectusers', 'enrol_manual'), array(), $options);
 

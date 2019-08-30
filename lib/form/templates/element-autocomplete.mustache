@@ -37,7 +37,8 @@ require(['core/form-autocomplete'], function(module) {
                    {{#quote}}{{element.placeholder}}{{/quote}},
                    {{element.casesensitive}},
                    {{element.showsuggestions}},
-                   {{#quote}}{{element.noselectionstring}}{{/quote}});
+                   {{#quote}}{{element.noselectionstring}}{{/quote}},
+                   {{element.closesuggestionsonselect}});
 });
 {{/js}}
 {{/element.frozen}}
