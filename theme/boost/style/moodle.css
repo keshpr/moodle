@@ -6054,13 +6054,13 @@ p.arrow_button input[type="button"],
 .alert-warning,
 #page-admin-index .adminwarning, .uninstalldeleteconfirmexternal,
 .que .outcome,
-.que .comment {
+.que .comment, #quiz-timer {
   color: #7d5a29;
   background-color: #fcefdc;
   border-color: #fbe8cd; }
-  .alert-warning hr, #page-admin-index .adminwarning hr, .uninstalldeleteconfirmexternal hr, .que .outcome hr, .que .comment hr {
+  .alert-warning hr, #page-admin-index .adminwarning hr, .uninstalldeleteconfirmexternal hr, .que .outcome hr, .que .comment hr, #quiz-timer hr {
     border-top-color: #f9ddb5; }
-  .alert-warning .alert-link, #page-admin-index .adminwarning .alert-link, .uninstalldeleteconfirmexternal .alert-link, .que .outcome .alert-link, .que .comment .alert-link {
+  .alert-warning .alert-link, #page-admin-index .adminwarning .alert-link, .uninstalldeleteconfirmexternal .alert-link, .que .outcome .alert-link, .que .comment .alert-link, #quiz-timer .alert-link {
     color: #573e1c; }
 
 .alert-danger,
@@ -16237,6 +16237,16 @@ div#dock {
   width: 90%;
   height: 22px;
   justify-content: flex-start; }
+
+#quiz-timer {
+  position: fixed;
+  left: 0;
+  top: 30px;
+  font-size: 20px;
+  width: 100vw;
+  text-align: center;
+  padding: 0;
+  z-index: 2; }
 
 .path-mod-quiz #mod_quiz_navblock .qnbutton {
   text-decoration: none;

@@ -417,6 +417,19 @@ div#dock {
     justify-content: flex-start;
 }
 
+#quiz-timer {
+    @extend .alert-warning;
+
+    position: fixed;
+    left: 0;
+    top: 30px;
+    font-size: 20px;
+    width: 100vw;
+    text-align: center;
+    padding: 0;
+    z-index: 2;
+}
+
 // Question navigation block.
 .path-mod-quiz #mod_quiz_navblock {
     .qnbutton {
